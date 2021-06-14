@@ -1,4 +1,5 @@
 { cloudflare_access_application = ./cloudflare_access_application.dhall
+, cloudflare_access_ca_certificate = ./cloudflare_access_ca_certificate.dhall
 , cloudflare_access_group = ./cloudflare_access_group.dhall
 , cloudflare_access_identity_provider =
     ./cloudflare_access_identity_provider.dhall

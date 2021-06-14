@@ -17,6 +17,36 @@
     , zone_id : Text
     , pop_pools : Optional (List { pool_ids : List Text, pop : Text })
     , region_pools : Optional (List { pool_ids : List Text, region : Text })
+    , rules :
+        Optional
+          ( List
+              { condition : Optional Text
+              , disabled : Optional Bool
+              , fixed_response :
+                  Optional (List { mapKey : Text, mapValue : Text })
+              , name : Text
+              , priority : Optional Natural
+              , terminates : Optional Bool
+              , overrides :
+                  Optional
+                    ( List
+                        { default_pools : Optional (List Text)
+                        , fallback_pool : Optional Text
+                        , session_affinity : Optional Text
+                        , session_affinity_attributes :
+                            Optional (List { mapKey : Text, mapValue : Text })
+                        , session_affinity_ttl : Optional Natural
+                        , steering_policy : Optional Text
+                        , ttl : Optional Natural
+                        , pop_pools :
+                            Optional (List { pool_ids : List Text, pop : Text })
+                        , region_pools :
+                            Optional
+                              (List { pool_ids : List Text, region : Text })
+                        }
+                    )
+              }
+          )
     }
 , default =
   { created_on = None Text
@@ -32,5 +62,35 @@
   , ttl = None Natural
   , pop_pools = None (List { pool_ids : List Text, pop : Text })
   , region_pools = None (List { pool_ids : List Text, region : Text })
+  , rules =
+      None
+        ( List
+            { condition : Optional Text
+            , disabled : Optional Bool
+            , fixed_response :
+                Optional (List { mapKey : Text, mapValue : Text })
+            , name : Text
+            , priority : Optional Natural
+            , terminates : Optional Bool
+            , overrides :
+                Optional
+                  ( List
+                      { default_pools : Optional (List Text)
+                      , fallback_pool : Optional Text
+                      , session_affinity : Optional Text
+                      , session_affinity_attributes :
+                          Optional (List { mapKey : Text, mapValue : Text })
+                      , session_affinity_ttl : Optional Natural
+                      , steering_policy : Optional Text
+                      , ttl : Optional Natural
+                      , pop_pools :
+                          Optional (List { pool_ids : List Text, pop : Text })
+                      , region_pools :
+                          Optional
+                            (List { pool_ids : List Text, region : Text })
+                      }
+                  )
+            }
+        )
   }
 }

@@ -16,6 +16,7 @@
               , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
+              , login_method : Optional (List Text)
               , service_token : Optional (List Text)
               , azure :
                   Optional
@@ -68,6 +69,7 @@
           , geo : Optional (List Text)
           , group : Optional (List Text)
           , ip : Optional (List Text)
+          , login_method : Optional (List Text)
           , service_token : Optional (List Text)
           , azure :
               Optional
@@ -120,6 +122,7 @@
               , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
+              , login_method : Optional (List Text)
               , service_token : Optional (List Text)
               , azure :
                   Optional
@@ -178,6 +181,7 @@
             , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
+            , login_method : Optional (List Text)
             , service_token : Optional (List Text)
             , azure :
                 Optional
@@ -231,6 +235,7 @@
             , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
+            , login_method : Optional (List Text)
             , service_token : Optional (List Text)
             , azure :
                 Optional
