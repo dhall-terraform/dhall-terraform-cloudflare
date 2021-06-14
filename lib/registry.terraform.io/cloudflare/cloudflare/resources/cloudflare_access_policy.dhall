@@ -4,7 +4,7 @@
     , decision : Text
     , id : Optional Text
     , name : Text
-    , precedence : Optional Natural
+    , precedence : Natural
     , zone_id : Optional Text
     , exclude :
         Optional
@@ -167,7 +167,6 @@
 , default =
   { account_id = None Text
   , id = None Text
-  , precedence = None Natural
   , zone_id = None Text
   , exclude =
       None

@@ -2,6 +2,8 @@
 , cloudflare_access_group = ./cloudflare_access_group.dhall
 , cloudflare_access_identity_provider =
     ./cloudflare_access_identity_provider.dhall
+, cloudflare_access_mutual_tls_certificate =
+    ./cloudflare_access_mutual_tls_certificate.dhall
 , cloudflare_access_policy = ./cloudflare_access_policy.dhall
 , cloudflare_access_rule = ./cloudflare_access_rule.dhall
 , cloudflare_access_service_token = ./cloudflare_access_service_token.dhall

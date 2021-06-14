@@ -1,6 +1,6 @@
 { Type =
     { certificate : Optional Text
-    , csr : Text
+    , csr : Optional Text
     , expires_on : Optional Text
     , hostnames : List Text
     , id : Optional Text
@@ -9,6 +9,7 @@
     }
 , default =
   { certificate = None Text
+  , csr = None Text
   , expires_on = None Text
   , id = None Text
   , requested_validity = None Natural
