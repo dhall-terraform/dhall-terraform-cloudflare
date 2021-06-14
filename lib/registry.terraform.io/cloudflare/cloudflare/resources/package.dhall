@@ -8,6 +8,7 @@
 , cloudflare_account_member = ./cloudflare_account_member.dhall
 , cloudflare_api_token = ./cloudflare_api_token.dhall
 , cloudflare_argo = ./cloudflare_argo.dhall
+, cloudflare_argo_tunnel = ./cloudflare_argo_tunnel.dhall
 , cloudflare_authenticated_origin_pulls_certificate =
     ./cloudflare_authenticated_origin_pulls_certificate.dhall
 , cloudflare_authenticated_origin_pulls =
@@ -40,6 +41,7 @@
 , cloudflare_waf_override = ./cloudflare_waf_override.dhall
 , cloudflare_waf_package = ./cloudflare_waf_package.dhall
 , cloudflare_waf_rule = ./cloudflare_waf_rule.dhall
+, cloudflare_worker_cron_trigger = ./cloudflare_worker_cron_trigger.dhall
 , cloudflare_worker_route = ./cloudflare_worker_route.dhall
 , cloudflare_worker_script = ./cloudflare_worker_script.dhall
 , cloudflare_workers_kv = ./cloudflare_workers_kv.dhall

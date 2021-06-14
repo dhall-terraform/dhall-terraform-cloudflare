@@ -27,7 +27,9 @@
               , response :
                   Optional
                     ( List
-                        { origin_traffic : Optional Bool
+                        { headers :
+                            Optional (List { mapKey : Text, mapValue : Text })
+                        , origin_traffic : Optional Bool
                         , statuses : Optional (List Natural)
                         }
                     )
@@ -54,7 +56,9 @@
             , response :
                 Optional
                   ( List
-                      { origin_traffic : Optional Bool
+                      { headers :
+                          Optional (List { mapKey : Text, mapValue : Text })
+                      , origin_traffic : Optional Bool
                       , statuses : Optional (List Natural)
                       }
                   )
