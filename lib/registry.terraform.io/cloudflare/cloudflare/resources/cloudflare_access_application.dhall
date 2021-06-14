@@ -3,6 +3,8 @@
     , allowed_idps : Optional (List Text)
     , aud : Optional Text
     , auto_redirect_to_identity : Optional Bool
+    , custom_deny_message : Optional Text
+    , custom_deny_url : Optional Text
     , domain : Text
     , enable_binding_cookie : Optional Bool
     , id : Optional Text
@@ -28,6 +30,8 @@
   , allowed_idps = None (List Text)
   , aud = None Text
   , auto_redirect_to_identity = None Bool
+  , custom_deny_message = None Text
+  , custom_deny_url = None Text
   , enable_binding_cookie = None Bool
   , id = None Text
   , session_duration = None Text

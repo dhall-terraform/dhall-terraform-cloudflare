@@ -11,6 +11,7 @@
     , modified_on : Optional Text
     , path : Optional Text
     , port : Optional Natural
+    , probe_zone : Optional Text
     , retries : Optional Natural
     , timeout : Optional Natural
     , type : Optional Text
@@ -29,6 +30,7 @@
   , modified_on = None Text
   , path = None Text
   , port = None Natural
+  , probe_zone = None Text
   , retries = None Natural
   , timeout = None Natural
   , type = None Text
