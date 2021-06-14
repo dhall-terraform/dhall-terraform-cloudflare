@@ -1,12 +1,13 @@
 { Type =
-    { allowed_idps : Optional (List Text)
+    { account_id : Optional Text
+    , allowed_idps : Optional (List Text)
     , aud : Optional Text
     , auto_redirect_to_identity : Optional Bool
     , domain : Text
     , id : Optional Text
     , name : Text
     , session_duration : Optional Text
-    , zone_id : Text
+    , zone_id : Optional Text
     , cors_headers :
         Optional
           ( List
@@ -22,11 +23,13 @@
           )
     }
 , default =
-  { allowed_idps = None (List Text)
+  { account_id = None Text
+  , allowed_idps = None (List Text)
   , aud = None Text
   , auto_redirect_to_identity = None Bool
   , id = None Text
   , session_duration = None Text
+  , zone_id = None Text
   , cors_headers =
       None
         ( List

@@ -1,10 +1,11 @@
 { Type =
-    { application_id : Text
+    { account_id : Optional Text
+    , application_id : Text
     , decision : Text
     , id : Optional Text
     , name : Text
     , precedence : Optional Natural
-    , zone_id : Text
+    , zone_id : Optional Text
     , exclude :
         Optional
           ( List
@@ -153,8 +154,10 @@
           )
     }
 , default =
-  { id = None Text
+  { account_id = None Text
+  , id = None Text
   , precedence = None Natural
+  , zone_id = None Text
   , exclude =
       None
         ( List
