@@ -16,6 +16,7 @@
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
+              , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
               , service_token : Optional (List Text)
@@ -67,6 +68,7 @@
           , email : Optional (List Text)
           , email_domain : Optional (List Text)
           , everyone : Optional Bool
+          , geo : Optional (List Text)
           , group : Optional (List Text)
           , ip : Optional (List Text)
           , service_token : Optional (List Text)
@@ -118,6 +120,7 @@
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
+              , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
               , service_token : Optional (List Text)
@@ -176,6 +179,7 @@
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool
+            , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
             , service_token : Optional (List Text)
@@ -228,6 +232,7 @@
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool
+            , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
             , service_token : Optional (List Text)

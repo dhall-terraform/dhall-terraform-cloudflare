@@ -4,6 +4,7 @@
     , aud : Optional Text
     , auto_redirect_to_identity : Optional Bool
     , domain : Text
+    , enable_binding_cookie : Optional Bool
     , id : Optional Text
     , name : Text
     , session_duration : Optional Text
@@ -27,6 +28,7 @@
   , allowed_idps = None (List Text)
   , aud = None Text
   , auto_redirect_to_identity = None Bool
+  , enable_binding_cookie = None Bool
   , id = None Text
   , session_duration = None Text
   , zone_id = None Text

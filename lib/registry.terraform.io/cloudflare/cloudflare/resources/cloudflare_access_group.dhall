@@ -1,7 +1,8 @@
 { Type =
-    { account_id : Text
+    { account_id : Optional Text
     , id : Optional Text
     , name : Text
+    , zone_id : Optional Text
     , exclude :
         Optional
           ( List
@@ -12,6 +13,7 @@
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
+              , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
               , service_token : Optional (List Text)
@@ -63,6 +65,7 @@
           , email : Optional (List Text)
           , email_domain : Optional (List Text)
           , everyone : Optional Bool
+          , geo : Optional (List Text)
           , group : Optional (List Text)
           , ip : Optional (List Text)
           , service_token : Optional (List Text)
@@ -114,6 +117,7 @@
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
+              , geo : Optional (List Text)
               , group : Optional (List Text)
               , ip : Optional (List Text)
               , service_token : Optional (List Text)
@@ -158,7 +162,9 @@
           )
     }
 , default =
-  { id = None Text
+  { account_id = None Text
+  , id = None Text
+  , zone_id = None Text
   , exclude =
       None
         ( List
@@ -169,6 +175,7 @@
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool
+            , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
             , service_token : Optional (List Text)
@@ -221,6 +228,7 @@
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool
+            , geo : Optional (List Text)
             , group : Optional (List Text)
             , ip : Optional (List Text)
             , service_token : Optional (List Text)

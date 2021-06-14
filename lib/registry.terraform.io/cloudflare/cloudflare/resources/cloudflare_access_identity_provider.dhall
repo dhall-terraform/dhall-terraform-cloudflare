@@ -1,8 +1,9 @@
 { Type =
-    { account_id : Text
+    { account_id : Optional Text
     , id : Optional Text
     , name : Text
     , type : Text
+    , zone_id : Optional Text
     , config :
         Optional
           ( List
@@ -29,7 +30,9 @@
           )
     }
 , default =
-  { id = None Text
+  { account_id = None Text
+  , id = None Text
+  , zone_id = None Text
   , config =
       None
         ( List
