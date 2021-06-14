@@ -30,6 +30,7 @@
 , cloudflare_logpush_job = ./cloudflare_logpush_job.dhall
 , cloudflare_logpush_ownership_challenge =
     ./cloudflare_logpush_ownership_challenge.dhall
+, cloudflare_magic_firewall_ruleset = ./cloudflare_magic_firewall_ruleset.dhall
 , cloudflare_origin_ca_certificate = ./cloudflare_origin_ca_certificate.dhall
 , cloudflare_page_rule = ./cloudflare_page_rule.dhall
 , cloudflare_rate_limit = ./cloudflare_rate_limit.dhall
