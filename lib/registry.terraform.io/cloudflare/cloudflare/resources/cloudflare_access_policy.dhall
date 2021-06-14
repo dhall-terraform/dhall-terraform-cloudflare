@@ -10,6 +10,7 @@
         Optional
           ( List
               { any_valid_service_token : Optional Bool
+              , auth_method : Optional Text
               , certificate : Optional Bool
               , common_name : Optional Text
               , email : Optional (List Text)
@@ -21,7 +22,7 @@
               , azure :
                   Optional
                     ( List
-                        { id : Optional Text
+                        { id : Optional (List Text)
                         , identity_provider_id : Optional Text
                         }
                     )
@@ -30,12 +31,13 @@
                     ( List
                         { identity_provider_id : Optional Text
                         , name : Optional Text
+                        , teams : Optional (List Text)
                         }
                     )
               , gsuite :
                   Optional
                     ( List
-                        { email : Optional Text
+                        { email : Optional (List Text)
                         , identity_provider_id : Optional Text
                         }
                     )
@@ -43,7 +45,7 @@
                   Optional
                     ( List
                         { identity_provider_id : Optional Text
-                        , name : Optional Text
+                        , name : Optional (List Text)
                         }
                     )
               , saml :
@@ -59,6 +61,7 @@
     , include :
         List
           { any_valid_service_token : Optional Bool
+          , auth_method : Optional Text
           , certificate : Optional Bool
           , common_name : Optional Text
           , email : Optional (List Text)
@@ -70,19 +73,22 @@
           , azure :
               Optional
                 ( List
-                    { id : Optional Text, identity_provider_id : Optional Text }
+                    { id : Optional (List Text)
+                    , identity_provider_id : Optional Text
+                    }
                 )
           , github :
               Optional
                 ( List
                     { identity_provider_id : Optional Text
                     , name : Optional Text
+                    , teams : Optional (List Text)
                     }
                 )
           , gsuite :
               Optional
                 ( List
-                    { email : Optional Text
+                    { email : Optional (List Text)
                     , identity_provider_id : Optional Text
                     }
                 )
@@ -90,7 +96,7 @@
               Optional
                 ( List
                     { identity_provider_id : Optional Text
-                    , name : Optional Text
+                    , name : Optional (List Text)
                     }
                 )
           , saml :
@@ -106,6 +112,7 @@
         Optional
           ( List
               { any_valid_service_token : Optional Bool
+              , auth_method : Optional Text
               , certificate : Optional Bool
               , common_name : Optional Text
               , email : Optional (List Text)
@@ -117,7 +124,7 @@
               , azure :
                   Optional
                     ( List
-                        { id : Optional Text
+                        { id : Optional (List Text)
                         , identity_provider_id : Optional Text
                         }
                     )
@@ -126,12 +133,13 @@
                     ( List
                         { identity_provider_id : Optional Text
                         , name : Optional Text
+                        , teams : Optional (List Text)
                         }
                     )
               , gsuite :
                   Optional
                     ( List
-                        { email : Optional Text
+                        { email : Optional (List Text)
                         , identity_provider_id : Optional Text
                         }
                     )
@@ -139,7 +147,7 @@
                   Optional
                     ( List
                         { identity_provider_id : Optional Text
-                        , name : Optional Text
+                        , name : Optional (List Text)
                         }
                     )
               , saml :
@@ -162,6 +170,7 @@
       None
         ( List
             { any_valid_service_token : Optional Bool
+            , auth_method : Optional Text
             , certificate : Optional Bool
             , common_name : Optional Text
             , email : Optional (List Text)
@@ -173,7 +182,7 @@
             , azure :
                 Optional
                   ( List
-                      { id : Optional Text
+                      { id : Optional (List Text)
                       , identity_provider_id : Optional Text
                       }
                   )
@@ -182,12 +191,13 @@
                   ( List
                       { identity_provider_id : Optional Text
                       , name : Optional Text
+                      , teams : Optional (List Text)
                       }
                   )
             , gsuite :
                 Optional
                   ( List
-                      { email : Optional Text
+                      { email : Optional (List Text)
                       , identity_provider_id : Optional Text
                       }
                   )
@@ -195,7 +205,7 @@
                 Optional
                   ( List
                       { identity_provider_id : Optional Text
-                      , name : Optional Text
+                      , name : Optional (List Text)
                       }
                   )
             , saml :
@@ -212,6 +222,7 @@
       None
         ( List
             { any_valid_service_token : Optional Bool
+            , auth_method : Optional Text
             , certificate : Optional Bool
             , common_name : Optional Text
             , email : Optional (List Text)
@@ -223,7 +234,7 @@
             , azure :
                 Optional
                   ( List
-                      { id : Optional Text
+                      { id : Optional (List Text)
                       , identity_provider_id : Optional Text
                       }
                   )
@@ -232,12 +243,13 @@
                   ( List
                       { identity_provider_id : Optional Text
                       , name : Optional Text
+                      , teams : Optional (List Text)
                       }
                   )
             , gsuite :
                 Optional
                   ( List
-                      { email : Optional Text
+                      { email : Optional (List Text)
                       , identity_provider_id : Optional Text
                       }
                   )
@@ -245,7 +257,7 @@
                 Optional
                   ( List
                       { identity_provider_id : Optional Text
-                      , name : Optional Text
+                      , name : Optional (List Text)
                       }
                   )
             , saml :

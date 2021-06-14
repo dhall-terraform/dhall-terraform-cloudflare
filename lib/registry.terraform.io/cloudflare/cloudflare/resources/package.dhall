@@ -12,6 +12,7 @@
 , cloudflare_authenticated_origin_pulls =
     ./cloudflare_authenticated_origin_pulls.dhall
 , cloudflare_byo_ip_prefix = ./cloudflare_byo_ip_prefix.dhall
+, cloudflare_certificate_pack = ./cloudflare_certificate_pack.dhall
 , cloudflare_custom_hostname = ./cloudflare_custom_hostname.dhall
 , cloudflare_custom_hostname_fallback_origin =
     ./cloudflare_custom_hostname_fallback_origin.dhall

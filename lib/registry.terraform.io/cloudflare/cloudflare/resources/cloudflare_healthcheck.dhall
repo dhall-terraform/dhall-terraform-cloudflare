@@ -24,6 +24,7 @@
     , type : Text
     , zone_id : Text
     , header : Optional (List { header : Text, values : List Text })
+    , timeouts : Optional { create : Optional Text }
     }
 , default =
   { allow_insecure = None Bool
@@ -47,5 +48,6 @@
   , suspended = None Bool
   , timeout = None Natural
   , header = None (List { header : Text, values : List Text })
+  , timeouts = None { create : Optional Text }
   }
 }
