@@ -13,6 +13,7 @@
     , type : Text
     , value : Optional Text
     , zone_id : Text
+    , timeouts : Optional { create : Optional Text, update : Optional Text }
     }
 , default =
   { created_on = None Text
@@ -26,5 +27,6 @@
   , proxied = None Bool
   , ttl = None Natural
   , value = None Text
+  , timeouts = None { create : Optional Text, update : Optional Text }
   }
 }

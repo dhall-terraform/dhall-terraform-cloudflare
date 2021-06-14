@@ -13,6 +13,7 @@
     , zone_id : Text
     , dns : List { name : Text, type : Text }
     , origin_dns : Optional (List { name : Text })
+    , origin_port_range : Optional (List { end : Natural, start : Natural })
     }
 , default =
   { argo_smart_routing = None Bool
@@ -26,5 +27,6 @@
   , tls = None Text
   , traffic_type = None Text
   , origin_dns = None (List { name : Text })
+  , origin_port_range = None (List { end : Natural, start : Natural })
   }
 }

@@ -7,13 +7,20 @@
 , cloudflare_access_service_token = ./cloudflare_access_service_token.dhall
 , cloudflare_account_member = ./cloudflare_account_member.dhall
 , cloudflare_argo = ./cloudflare_argo.dhall
+, cloudflare_authenticated_origin_pulls_certificate =
+    ./cloudflare_authenticated_origin_pulls_certificate.dhall
+, cloudflare_authenticated_origin_pulls =
+    ./cloudflare_authenticated_origin_pulls.dhall
 , cloudflare_byo_ip_prefix = ./cloudflare_byo_ip_prefix.dhall
 , cloudflare_custom_hostname = ./cloudflare_custom_hostname.dhall
+, cloudflare_custom_hostname_fallback_origin =
+    ./cloudflare_custom_hostname_fallback_origin.dhall
 , cloudflare_custom_pages = ./cloudflare_custom_pages.dhall
 , cloudflare_custom_ssl = ./cloudflare_custom_ssl.dhall
 , cloudflare_filter = ./cloudflare_filter.dhall
 , cloudflare_firewall_rule = ./cloudflare_firewall_rule.dhall
 , cloudflare_healthcheck = ./cloudflare_healthcheck.dhall
+, cloudflare_ip_list = ./cloudflare_ip_list.dhall
 , cloudflare_load_balancer = ./cloudflare_load_balancer.dhall
 , cloudflare_load_balancer_monitor = ./cloudflare_load_balancer_monitor.dhall
 , cloudflare_load_balancer_pool = ./cloudflare_load_balancer_pool.dhall
