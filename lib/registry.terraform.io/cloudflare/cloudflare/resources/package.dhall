@@ -6,6 +6,7 @@
 , cloudflare_access_rule = ./cloudflare_access_rule.dhall
 , cloudflare_access_service_token = ./cloudflare_access_service_token.dhall
 , cloudflare_account_member = ./cloudflare_account_member.dhall
+, cloudflare_api_token = ./cloudflare_api_token.dhall
 , cloudflare_argo = ./cloudflare_argo.dhall
 , cloudflare_authenticated_origin_pulls_certificate =
     ./cloudflare_authenticated_origin_pulls_certificate.dhall
@@ -43,6 +44,7 @@
 , cloudflare_workers_kv = ./cloudflare_workers_kv.dhall
 , cloudflare_workers_kv_namespace = ./cloudflare_workers_kv_namespace.dhall
 , cloudflare_zone = ./cloudflare_zone.dhall
+, cloudflare_zone_dnssec = ./cloudflare_zone_dnssec.dhall
 , cloudflare_zone_lockdown = ./cloudflare_zone_lockdown.dhall
 , cloudflare_zone_settings_override = ./cloudflare_zone_settings_override.dhall
 }
