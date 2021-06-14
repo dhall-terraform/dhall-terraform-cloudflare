@@ -15,6 +15,7 @@
           , enabled : Optional Bool
           , name : Text
           , weight : Optional Natural
+          , header : Optional (List { header : Text, values : List Text })
           }
     }
 , default =

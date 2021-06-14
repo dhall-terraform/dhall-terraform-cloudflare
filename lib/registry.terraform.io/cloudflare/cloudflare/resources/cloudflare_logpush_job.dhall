@@ -5,7 +5,7 @@
     , id : Optional Text
     , logpull_options : Optional Text
     , name : Optional Text
-    , ownership_challenge : Text
+    , ownership_challenge : Optional Text
     , zone_id : Text
     }
 , default =
@@ -13,5 +13,6 @@
   , id = None Text
   , logpull_options = None Text
   , name = None Text
+  , ownership_challenge = None Text
   }
 }

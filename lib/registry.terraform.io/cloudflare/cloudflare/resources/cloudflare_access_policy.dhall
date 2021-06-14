@@ -13,6 +13,7 @@
               , auth_method : Optional Text
               , certificate : Optional Bool
               , common_name : Optional Text
+              , device_posture : Optional (List Text)
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
@@ -66,6 +67,7 @@
           , auth_method : Optional Text
           , certificate : Optional Bool
           , common_name : Optional Text
+          , device_posture : Optional (List Text)
           , email : Optional (List Text)
           , email_domain : Optional (List Text)
           , everyone : Optional Bool
@@ -119,6 +121,7 @@
               , auth_method : Optional Text
               , certificate : Optional Bool
               , common_name : Optional Text
+              , device_posture : Optional (List Text)
               , email : Optional (List Text)
               , email_domain : Optional (List Text)
               , everyone : Optional Bool
@@ -178,6 +181,7 @@
             , auth_method : Optional Text
             , certificate : Optional Bool
             , common_name : Optional Text
+            , device_posture : Optional (List Text)
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool
@@ -232,6 +236,7 @@
             , auth_method : Optional Text
             , certificate : Optional Bool
             , common_name : Optional Text
+            , device_posture : Optional (List Text)
             , email : Optional (List Text)
             , email_domain : Optional (List Text)
             , everyone : Optional Bool

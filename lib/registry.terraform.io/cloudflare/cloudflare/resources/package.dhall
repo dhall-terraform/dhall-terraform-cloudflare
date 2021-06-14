@@ -23,6 +23,7 @@
     ./cloudflare_custom_hostname_fallback_origin.dhall
 , cloudflare_custom_pages = ./cloudflare_custom_pages.dhall
 , cloudflare_custom_ssl = ./cloudflare_custom_ssl.dhall
+, cloudflare_device_posture_rule = ./cloudflare_device_posture_rule.dhall
 , cloudflare_filter = ./cloudflare_filter.dhall
 , cloudflare_firewall_rule = ./cloudflare_firewall_rule.dhall
 , cloudflare_healthcheck = ./cloudflare_healthcheck.dhall
@@ -40,6 +41,7 @@
 , cloudflare_rate_limit = ./cloudflare_rate_limit.dhall
 , cloudflare_record = ./cloudflare_record.dhall
 , cloudflare_spectrum_application = ./cloudflare_spectrum_application.dhall
+, cloudflare_teams_list = ./cloudflare_teams_list.dhall
 , cloudflare_waf_group = ./cloudflare_waf_group.dhall
 , cloudflare_waf_override = ./cloudflare_waf_override.dhall
 , cloudflare_waf_package = ./cloudflare_waf_package.dhall
